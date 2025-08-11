@@ -1,4 +1,4 @@
-/*! elementor - v3.30.0 - 30-07-2025 */
+/*! elementor - v3.31.0 - 06-08-2025 */
 "use strict";
 (self["webpackChunkelementorFrontend"] = self["webpackChunkelementorFrontend"] || []).push([["youtube-handler"],{
 

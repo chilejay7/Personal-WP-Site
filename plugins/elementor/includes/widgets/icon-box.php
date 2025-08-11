@@ -279,10 +279,17 @@ class Widget_Icon_Box extends Widget_Base {
 					],
 				],
 				'default' => 'top',
-				'toggle' => false,
-				'prefix_class' => 'elementor-vertical-align-',
+				'selectors_dictionary' => [
+					'top' => 'start',
+					'middle' => 'center',
+					'bottom' => 'end',
+				],
+				'selectors' => [
+					'{{WRAPPER}} .elementor-icon-box-wrapper' => 'align-items: {{VALUE}};',
+				],
 				'condition' => [
-					'position!' => 'top',
+					'selected_icon[value]!' => '',
+					'position' => [ 'left', 'right' ],
 				],
 			]
 		);
@@ -366,7 +373,7 @@ class Widget_Icon_Box extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .elementor-icon-box-title' => 'margin-bottom: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .elementor-icon-box-title' => 'margin-block-end: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);
